@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "postinstall": "node -e \"try { const f='./node_modules/rollup/dist/native.js'; const fs=require('fs'); let c=fs.readFileSync(f,'utf8'); if(!c.includes('@rollup/wasm-node/dist/native.js')){ c=c.replace('return require(id);','try{return require(id);}catch(e){try{return require(\\'@rollup/wasm-node/dist/native.js\\');}catch(e2){}}'); fs.writeFileSync(f,c); } }catch(e){}\""
+  },
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@rollup/rollup-win32-x64-gnu": "^4.67.3",
+    "@rollup/wasm-node": "^4.67.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.2.0"
+  }
+}

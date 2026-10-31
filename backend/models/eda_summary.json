@@ -1,0 +1,578 @@
+{
+  "total_records": 4464,
+  "depressed_count": 1201,
+  "non_depressed_count": 3263,
+  "overall_depression_rate": 26.9,
+  "target_distribution": [
+    {
+      "name": "Not Depressed",
+      "value": 3263,
+      "percentage": 73.1
+    },
+    {
+      "name": "Depressed",
+      "value": 1201,
+      "percentage": 26.9
+    }
+  ],
+  "gender_chart": [
+    {
+      "gender": "Female",
+      "not_depressed": 1807,
+      "depressed": 655,
+      "total": 2462,
+      "depression_rate": 26.6
+    },
+    {
+      "gender": "Male",
+      "not_depressed": 1456,
+      "depressed": 546,
+      "total": 2002,
+      "depression_rate": 27.27
+    }
+  ],
+  "age_chart": [
+    {
+      "age": 17,
+      "not_depressed": 7,
+      "depressed": 7,
+      "total": 14,
+      "depression_rate": 50.0
+    },
+    {
+      "age": 18,
+      "not_depressed": 69,
+      "depressed": 17,
+      "total": 86,
+      "depression_rate": 19.77
+    },
+    {
+      "age": 19,
+      "not_depressed": 46,
+      "depressed": 19,
+      "total": 65,
+      "depression_rate": 29.23
+    },
+    {
+      "age": 20,
+      "not_depressed": 327,
+      "depressed": 186,
+      "total": 513,
+      "depression_rate": 36.26
+    },
+    {
+      "age": 21,
+      "not_depressed": 545,
+      "depressed": 181,
+      "total": 726,
+      "depression_rate": 24.93
+    },
+    {
+      "age": 22,
+      "not_depressed": 461,
+      "depressed": 153,
+      "total": 614,
+      "depression_rate": 24.92
+    },
+    {
+      "age": 23,
+      "not_depressed": 844,
+      "depressed": 317,
+      "total": 1161,
+      "depression_rate": 27.3
+    },
+    {
+      "age": 24,
+      "not_depressed": 309,
+      "depressed": 121,
+      "total": 430,
+      "depression_rate": 28.14
+    },
+    {
+      "age": 25,
+      "not_depressed": 420,
+      "depressed": 103,
+      "total": 523,
+      "depression_rate": 19.69
+    },
+    {
+      "age": 26,
+      "not_depressed": 136,
+      "depressed": 51,
+      "total": 187,
+      "depression_rate": 27.27
+    },
+    {
+      "age": 27,
+      "not_depressed": 56,
+      "depressed": 27,
+      "total": 83,
+      "depression_rate": 32.53
+    },
+    {
+      "age": 28,
+      "not_depressed": 43,
+      "depressed": 19,
+      "total": 62,
+      "depression_rate": 30.65
+    }
+  ],
+  "health_chart": [
+    {
+      "condition": "Good",
+      "not_depressed": 1162,
+      "depressed": 0,
+      "total": 1162,
+      "depression_rate": 0.0
+    },
+    {
+      "condition": "Normal",
+      "not_depressed": 1704,
+      "depressed": 83,
+      "total": 1787,
+      "depression_rate": 4.64
+    },
+    {
+      "condition": "Abnormal",
+      "not_depressed": 397,
+      "depressed": 484,
+      "total": 881,
+      "depression_rate": 54.94
+    },
+    {
+      "condition": "Critical",
+      "not_depressed": 0,
+      "depressed": 634,
+      "total": 634,
+      "depression_rate": 100.0
+    }
+  ],
+  "relationship_chart": [
+    {
+      "status": "Complicated",
+      "not_depressed": 177,
+      "depressed": 27,
+      "total": 204,
+      "depression_rate": 13.24
+    },
+    {
+      "status": "In a Relationship",
+      "not_depressed": 1290,
+      "depressed": 167,
+      "total": 1457,
+      "depression_rate": 11.46
+    },
+    {
+      "status": "Single",
+      "not_depressed": 1796,
+      "depressed": 1007,
+      "total": 2803,
+      "depression_rate": 35.93
+    }
+  ],
+  "friend_chart": [
+    {
+      "has_friends": "No",
+      "not_depressed": 821,
+      "depressed": 428,
+      "total": 1249,
+      "depression_rate": 34.27
+    },
+    {
+      "has_friends": "Yes",
+      "not_depressed": 2442,
+      "depressed": 773,
+      "total": 3215,
+      "depression_rate": 24.04
+    }
+  ],
+  "family_chart": [
+    {
+      "background": "Lower Middle class",
+      "not_depressed": 799,
+      "depressed": 352,
+      "total": 1151,
+      "depression_rate": 30.58
+    },
+    {
+      "background": "Middle class",
+      "not_depressed": 1911,
+      "depressed": 731,
+      "total": 2642,
+      "depression_rate": 27.67
+    },
+    {
+      "background": "Rich class",
+      "not_depressed": 553,
+      "depressed": 118,
+      "total": 671,
+      "depression_rate": 17.59
+    }
+  ],
+  "living_chart": [
+    {
+      "living_style": "Bachelor",
+      "not_depressed": 1755,
+      "depressed": 694,
+      "total": 2449,
+      "depression_rate": 28.34
+    },
+    {
+      "living_style": "Family",
+      "not_depressed": 1508,
+      "depressed": 507,
+      "total": 2015,
+      "depression_rate": 25.16
+    }
+  ],
+  "division_chart": [
+    {
+      "division": "Rangpur",
+      "not_depressed": 247,
+      "depressed": 116,
+      "total": 363,
+      "depression_rate": 31.96
+    },
+    {
+      "division": "Rajshahi",
+      "not_depressed": 334,
+      "depressed": 154,
+      "total": 488,
+      "depression_rate": 31.56
+    },
+    {
+      "division": "Khulna",
+      "not_depressed": 378,
+      "depressed": 170,
+      "total": 548,
+      "depression_rate": 31.02
+    },
+    {
+      "division": "Chittagong",
+      "not_depressed": 278,
+      "depressed": 122,
+      "total": 400,
+      "depression_rate": 30.5
+    },
+    {
+      "division": "Mymensingh",
+      "not_depressed": 244,
+      "depressed": 94,
+      "total": 338,
+      "depression_rate": 27.81
+    },
+    {
+      "division": "Barisal",
+      "not_depressed": 257,
+      "depressed": 98,
+      "total": 355,
+      "depression_rate": 27.61
+    },
+    {
+      "division": "Sylhet",
+      "not_depressed": 340,
+      "depressed": 105,
+      "total": 445,
+      "depression_rate": 23.6
+    },
+    {
+      "division": "Dhaka",
+      "not_depressed": 1185,
+      "depressed": 342,
+      "total": 1527,
+      "depression_rate": 22.4
+    }
+  ],
+  "cgpa_chart": [
+    {
+      "band": "2.00 - 2.49",
+      "not_depressed": 35,
+      "depressed": 17,
+      "total": 52,
+      "depression_rate": 32.69
+    },
+    {
+      "band": "2.50 - 2.99",
+      "not_depressed": 322,
+      "depressed": 213,
+      "total": 535,
+      "depression_rate": 39.81
+    },
+    {
+      "band": "3.00 - 3.49",
+      "not_depressed": 1208,
+      "depressed": 466,
+      "total": 1674,
+      "depression_rate": 27.84
+    },
+    {
+      "band": "3.50 - 3.74",
+      "not_depressed": 895,
+      "depressed": 271,
+      "total": 1166,
+      "depression_rate": 23.24
+    },
+    {
+      "band": "3.75 - 4.00",
+      "not_depressed": 803,
+      "depressed": 234,
+      "total": 1037,
+      "depression_rate": 22.57
+    }
+  ],
+  "semester_chart": [
+    {
+      "semester": 0,
+      "not_depressed": 33,
+      "depressed": 9,
+      "total": 42,
+      "depression_rate": 21.43
+    },
+    {
+      "semester": 1,
+      "not_depressed": 58,
+      "depressed": 30,
+      "total": 88,
+      "depression_rate": 34.09
+    },
+    {
+      "semester": 2,
+      "not_depressed": 376,
+      "depressed": 167,
+      "total": 543,
+      "depression_rate": 30.76
+    },
+    {
+      "semester": 3,
+      "not_depressed": 371,
+      "depressed": 140,
+      "total": 511,
+      "depression_rate": 27.4
+    },
+    {
+      "semester": 4,
+      "not_depressed": 424,
+      "depressed": 129,
+      "total": 553,
+      "depression_rate": 23.33
+    },
+    {
+      "semester": 5,
+      "not_depressed": 550,
+      "depressed": 202,
+      "total": 752,
+      "depression_rate": 26.86
+    },
+    {
+      "semester": 6,
+      "not_depressed": 367,
+      "depressed": 133,
+      "total": 500,
+      "depression_rate": 26.6
+    },
+    {
+      "semester": 7,
+      "not_depressed": 302,
+      "depressed": 102,
+      "total": 404,
+      "depression_rate": 25.25
+    },
+    {
+      "semester": 8,
+      "not_depressed": 372,
+      "depressed": 139,
+      "total": 511,
+      "depression_rate": 27.2
+    },
+    {
+      "semester": 9,
+      "not_depressed": 197,
+      "depressed": 89,
+      "total": 286,
+      "depression_rate": 31.12
+    },
+    {
+      "semester": 10,
+      "not_depressed": 90,
+      "depressed": 24,
+      "total": 114,
+      "depression_rate": 21.05
+    },
+    {
+      "semester": 11,
+      "not_depressed": 96,
+      "depressed": 23,
+      "total": 119,
+      "depression_rate": 19.33
+    },
+    {
+      "semester": 12,
+      "not_depressed": 26,
+      "depressed": 14,
+      "total": 40,
+      "depression_rate": 35.0
+    },
+    {
+      "semester": 13,
+      "not_depressed": 1,
+      "depressed": 0,
+      "total": 1,
+      "depression_rate": 0.0
+    }
+  ],
+  "correlation_matrix": {
+    "columns": [
+      "Age",
+      "Current_semester",
+      "CGPA",
+      "Cost_without_study",
+      "Depression"
+    ],
+    "data": [
+      [
+        1.0,
+        0.3253,
+        -0.0651,
+        -0.0626,
+        -0.0339
+      ],
+      [
+        0.3253,
+        1.0,
+        -0.0079,
+        0.0138,
+        -0.0178
+      ],
+      [
+        -0.0651,
+        -0.0079,
+        1.0,
+        0.0819,
+        -0.0963
+      ],
+      [
+        -0.0626,
+        0.0138,
+        0.0819,
+        1.0,
+        0.0182
+      ],
+      [
+        -0.0339,
+        -0.0178,
+        -0.0963,
+        0.0182,
+        1.0
+      ]
+    ]
+  },
+  "numerical_summary": {
+    "Age": {
+      "mean": 22.62,
+      "median": 23.0,
+      "std": 2.02,
+      "min": 17.0,
+      "max": 28.0,
+      "q25": 21.0,
+      "q75": 24.0
+    },
+    "Current_semester": {
+      "mean": 5.4,
+      "median": 5.0,
+      "std": 2.58,
+      "min": 0.0,
+      "max": 13.0,
+      "q25": 3.0,
+      "q75": 7.0
+    },
+    "CGPA": {
+      "mean": 3.41,
+      "median": 3.49,
+      "std": 0.39,
+      "min": 2.25,
+      "max": 4.0,
+      "q25": 3.15,
+      "q75": 3.7
+    },
+    "Cost_without_study": {
+      "mean": 11242.98,
+      "median": 9500.0,
+      "std": 6640.14,
+      "min": 0.0,
+      "max": 32000.0,
+      "q25": 6100.0,
+      "q75": 15439.0
+    }
+  },
+  "categorical_options": {
+    "Gender": [
+      "Female",
+      "Male"
+    ],
+    "Family_background": [
+      "Middle class",
+      "Lower Middle class",
+      "Rich class"
+    ],
+    "Relationship_status": [
+      "Single",
+      "In a Relationship",
+      "Complicated"
+    ],
+    "Marital_status": [
+      "Unmarried",
+      "Married",
+      "Separated"
+    ],
+    "Living_style": [
+      "Bachelor",
+      "Family"
+    ],
+    "friend_circle": [
+      "Yes",
+      "No"
+    ],
+    "Health_condition": [
+      "Normal",
+      "Good",
+      "Abnormal",
+      "Critical"
+    ],
+    "Home_division": [
+      "Dhaka",
+      "Khulna",
+      "Rajshahi",
+      "Sylhet",
+      "Chittagong",
+      "Rangpur",
+      "Barisal",
+      "Mymensingh"
+    ]
+  },
+  "numerical_constraints": {
+    "Age": {
+      "min": 15,
+      "max": 40,
+      "type": "int",
+      "label": "Age"
+    },
+    "Current_semester": {
+      "min": 0,
+      "max": 16,
+      "type": "int",
+      "label": "Current Semester"
+    },
+    "CGPA": {
+      "min": 0.0,
+      "max": 4.0,
+      "type": "float",
+      "label": "CGPA"
+    },
+    "Cost_without_study": {
+      "min": 0,
+      "max": 100000,
+      "type": "float",
+      "label": "Living Cost (Monthly)"
+    }
+  }
+}

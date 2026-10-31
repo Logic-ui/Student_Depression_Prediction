@@ -1,0 +1,212 @@
+{
+  "model_name": "Gradient Boosting",
+  "features": [
+    {
+      "feature": "Health_condition_Critical",
+      "importance": 0.46449,
+      "percentage": 46.45
+    },
+    {
+      "feature": "Health_condition_Abnormal",
+      "importance": 0.2235,
+      "percentage": 22.35
+    },
+    {
+      "feature": "Relationship_status_Single",
+      "importance": 0.15358,
+      "percentage": 15.36
+    },
+    {
+      "feature": "Marital_status_Unmarried",
+      "importance": 0.03674,
+      "percentage": 3.67
+    },
+    {
+      "feature": "Family_background_Rich class",
+      "importance": 0.03266,
+      "percentage": 3.27
+    },
+    {
+      "feature": "CGPA",
+      "importance": 0.02349,
+      "percentage": 2.35
+    },
+    {
+      "feature": "friend_circle_Yes",
+      "importance": 0.01086,
+      "percentage": 1.09
+    },
+    {
+      "feature": "friend_circle_No",
+      "importance": 0.01044,
+      "percentage": 1.04
+    },
+    {
+      "feature": "Relationship_status_In a Relationship",
+      "importance": 0.00962,
+      "percentage": 0.96
+    },
+    {
+      "feature": "Current_semester",
+      "importance": 0.0088,
+      "percentage": 0.88
+    },
+    {
+      "feature": "Cost_without_study",
+      "importance": 0.00733,
+      "percentage": 0.73
+    },
+    {
+      "feature": "Health_condition_Normal",
+      "importance": 0.00559,
+      "percentage": 0.56
+    },
+    {
+      "feature": "Health_condition_Good",
+      "importance": 0.00464,
+      "percentage": 0.46
+    },
+    {
+      "feature": "Marital_status_Married",
+      "importance": 0.00456,
+      "percentage": 0.46
+    },
+    {
+      "feature": "Age",
+      "importance": 0.00103,
+      "percentage": 0.1
+    },
+    {
+      "feature": "Relationship_status_Complicated",
+      "importance": 0.00084,
+      "percentage": 0.08
+    },
+    {
+      "feature": "Marital_status_Separated",
+      "importance": 0.0003,
+      "percentage": 0.03
+    },
+    {
+      "feature": "Home_division_Khulna",
+      "importance": 0.00022,
+      "percentage": 0.02
+    },
+    {
+      "feature": "Gender_Female",
+      "importance": 0.00021,
+      "percentage": 0.02
+    },
+    {
+      "feature": "Home_division_Sylhet",
+      "importance": 0.00019,
+      "percentage": 0.02
+    },
+    {
+      "feature": "Home_division_Dhaka",
+      "importance": 0.00018,
+      "percentage": 0.02
+    },
+    {
+      "feature": "Home_division_Rajshahi",
+      "importance": 0.00015,
+      "percentage": 0.01
+    },
+    {
+      "feature": "Living_style_Family",
+      "importance": 0.00011,
+      "percentage": 0.01
+    },
+    {
+      "feature": "Home_division_Barisal",
+      "importance": 0.0001,
+      "percentage": 0.01
+    },
+    {
+      "feature": "Gender_Male",
+      "importance": 9e-05,
+      "percentage": 0.01
+    },
+    {
+      "feature": "Living_style_Bachelor",
+      "importance": 9e-05,
+      "percentage": 0.01
+    },
+    {
+      "feature": "Home_division_Chittagong",
+      "importance": 7e-05,
+      "percentage": 0.01
+    },
+    {
+      "feature": "Family_background_Lower Middle class",
+      "importance": 5e-05,
+      "percentage": 0.01
+    },
+    {
+      "feature": "Home_division_Rangpur",
+      "importance": 5e-05,
+      "percentage": 0.0
+    },
+    {
+      "feature": "Home_division_Mymensingh",
+      "importance": 1e-05,
+      "percentage": 0.0
+    },
+    {
+      "feature": "Family_background_Middle class",
+      "importance": 0.0,
+      "percentage": 0.0
+    }
+  ],
+  "top_10": [
+    {
+      "feature": "Health_condition_Critical",
+      "importance": 0.46449,
+      "percentage": 46.45
+    },
+    {
+      "feature": "Health_condition_Abnormal",
+      "importance": 0.2235,
+      "percentage": 22.35
+    },
+    {
+      "feature": "Relationship_status_Single",
+      "importance": 0.15358,
+      "percentage": 15.36
+    },
+    {
+      "feature": "Marital_status_Unmarried",
+      "importance": 0.03674,
+      "percentage": 3.67
+    },
+    {
+      "feature": "Family_background_Rich class",
+      "importance": 0.03266,
+      "percentage": 3.27
+    },
+    {
+      "feature": "CGPA",
+      "importance": 0.02349,
+      "percentage": 2.35
+    },
+    {
+      "feature": "friend_circle_Yes",
+      "importance": 0.01086,
+      "percentage": 1.09
+    },
+    {
+      "feature": "friend_circle_No",
+      "importance": 0.01044,
+      "percentage": 1.04
+    },
+    {
+      "feature": "Relationship_status_In a Relationship",
+      "importance": 0.00962,
+      "percentage": 0.96
+    },
+    {
+      "feature": "Current_semester",
+      "importance": 0.0088,
+      "percentage": 0.88
+    }
+  ]
+}
