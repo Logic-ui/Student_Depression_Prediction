@@ -12,17 +12,21 @@ MODEL_PATH = os.path.join(MODELS_DIR, 'depression_model.joblib')
 PREPROCESSOR_PATH = os.path.join(MODELS_DIR, 'preprocessing_pipeline.joblib')
 
 pipeline = None
+_last_mtime = 0
 
 def get_pipeline():
-    global pipeline
-    if pipeline is None:
+    global pipeline, _last_mtime
+    mtime = os.path.getmtime(FULL_PIPELINE_PATH) if os.path.exists(FULL_PIPELINE_PATH) else 0
+    if pipeline is None or mtime != _last_mtime:
         if os.path.exists(FULL_PIPELINE_PATH):
             pipeline = joblib.load(FULL_PIPELINE_PATH)
+            _last_mtime = mtime
         elif os.path.exists(MODEL_PATH) and os.path.exists(PREPROCESSOR_PATH):
             from sklearn.pipeline import Pipeline
             clf = joblib.load(MODEL_PATH)
             prep = joblib.load(PREPROCESSOR_PATH)
             pipeline = Pipeline(steps=[('preprocessor', prep), ('classifier', clf)])
+            _last_mtime = mtime
         else:
             raise FileNotFoundError("Trained model files not found. Please run train_model.py first.")
     return pipeline
@@ -157,6 +161,14 @@ def predict():
         risk_factors = assess_risk_factors(cleaned_data)
         recommendations = generate_recommendations(risk_level, risk_factors)
 
+        engineered_metrics = {
+            'health_risk_weight': float(input_df['Health_Risk_Weight'].iloc[0]),
+            'social_isolation_index': float(input_df['Social_Isolation_Index'].iloc[0]),
+            'academic_pressure_score': float(input_df['Academic_Pressure_Score'].iloc[0]),
+            'financial_burden_index': float(input_df['Financial_Burden_Index'].iloc[0]),
+            'age_to_semester_pace': float(input_df['Age_to_Semester_Pace'].iloc[0])
+        }
+
         return jsonify({
             'status': 'success',
             'prediction': 'Yes' if is_depressed else 'No',
@@ -169,6 +181,7 @@ def predict():
             'badge_color': badge_color,
             'risk_factors': risk_factors,
             'recommendations': recommendations,
+            'engineered_metrics': engineered_metrics,
             'input_data': cleaned_data,
             'disclaimer': "This prediction is an educational machine learning assessment and must NOT be used as a clinical diagnosis."
         }), 200

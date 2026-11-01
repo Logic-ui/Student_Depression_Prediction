@@ -23,8 +23,10 @@ from utils.preprocessing import (
     NUMERICAL_FEATURES,
     CATEGORICAL_FEATURES,
     ALL_FEATURE_COLUMNS,
+    RAW_FEATURE_COLUMNS,
     TARGET_COLUMN,
     build_preprocessor,
+    add_engineered_features,
     CATEGORICAL_OPTIONS,
     NUMERICAL_CONSTRAINTS
 )
@@ -63,7 +65,11 @@ def main():
 
     # Binary encoding of target: Yes = 1, No = 0
     y = df[TARGET_COLUMN].map({'Yes': 1, 'No': 0}).astype(int)
-    X = df[ALL_FEATURE_COLUMNS].copy()
+
+    print("Computing domain-specific engineered features...")
+    df_enriched = add_engineered_features(df)
+    X = df_enriched[ALL_FEATURE_COLUMNS].copy()
+    print(f"Total Features (Raw + Engineered): {len(ALL_FEATURE_COLUMNS)}")
 
     # Stratified Train/Test split (80% train, 20% test)
     X_train, X_test, y_train, y_test = train_test_split(
@@ -438,8 +444,9 @@ def generate_eda_payload(df):
             'depression_rate': round(yes_cnt / tot * 100, 2) if tot > 0 else 0
         })
 
-    # Correlation Matrix of numerical features
-    df_num = df[['Age', 'Current_semester', 'CGPA', 'Cost_without_study']].copy()
+    # Correlation Matrix of all numerical features (Raw + Engineered)
+    df_enriched = add_engineered_features(df)
+    df_num = df_enriched[NUMERICAL_FEATURES].copy()
     df_num['Depression'] = (df['Depression'] == 'Yes').astype(int)
     corr = df_num.corr().round(4)
     corr_matrix = {
@@ -449,15 +456,15 @@ def generate_eda_payload(df):
 
     # Numerical Summary Statistics
     num_summary = {}
-    for col in ['Age', 'Current_semester', 'CGPA', 'Cost_without_study']:
+    for col in NUMERICAL_FEATURES:
         num_summary[col] = {
-            'mean': round(float(df[col].mean()), 2),
-            'median': round(float(df[col].median()), 2),
-            'std': round(float(df[col].std()), 2),
-            'min': round(float(df[col].min()), 2),
-            'max': round(float(df[col].max()), 2),
-            'q25': round(float(df[col].quantile(0.25)), 2),
-            'q75': round(float(df[col].quantile(0.75)), 2)
+            'mean': round(float(df_enriched[col].mean()), 2),
+            'median': round(float(df_enriched[col].median()), 2),
+            'std': round(float(df_enriched[col].std()), 2),
+            'min': round(float(df_enriched[col].min()), 2),
+            'max': round(float(df_enriched[col].max()), 2),
+            'q25': round(float(df_enriched[col].quantile(0.25)), 2),
+            'q75': round(float(df_enriched[col].quantile(0.75)), 2)
         }
 
     return {
